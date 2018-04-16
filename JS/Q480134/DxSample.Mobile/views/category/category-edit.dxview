@@ -1,0 +1,27 @@
+
+<div data-dx-role="view" data-dx-name="CategoryEdit" data-dx-mode="edit" data-dx-title="Category">
+    <div data-dx-role="command" data-bind="dxCommand: { action: handleSave, location: 'save', title: 'Save', icon: 'save' } "></div>
+    <div data-dx-role="command" data-bind="dxCommand: { action: '#_back', location: 'cancel', behavior: 'back', title: 'Cancel', icon: 'close' }" ></div>
+    <div data-dx-target-placeholder="content">
+        <div data-bind="dxScrollView: { }">
+            <div class="dx-fieldset">
+                <div class="dx-field">
+                    <div class="dx-field-label">Category ID: </div>
+                    <div class="dx-field-value" data-bind="dxNumberbox: { value: category.CategoryID, readonly: true }"></div>
+                </div>
+                <div class="dx-field">
+                    <div class="dx-field-label">Category name: </div>
+                    <div class="dx-field-value" data-bind="dxTextbox: { value: category.CategoryName, placeholder: 'Enter categoryname' }"></div>
+                </div>
+                <div class="dx-field">
+                    <div class="dx-field-label">Description: </div>
+                    <div class="dx-field-value" data-bind="dxTextbox: { value: category.Description, placeholder: 'Enter description' }"></div>
+                </div>
+                <div class="dx-field">
+                    <div class="dx-field-label">Picture: </div>
+                    <div class="dx-field-value" data-bind="dxTextbox: { value: category.Picture, placeholder: 'Enter picture' }"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
